@@ -21,22 +21,38 @@
 
   <form action="" method="post" class="form">
     <!-- Upload photo -->
-    <div>
-      <p>Upload Avatar</p>
+    <div class="upload-container">
+      <p id="upload-label">Upload Avatar</p>
       <!-- DRAG AND DROP ZONE -->
-      <label id="drop-zone">
-        Drag and drop or click to upload
-        <input type="file" id="avatar" multiple accept="image/*">
-        <!-- Preview image -->
-        <ul id="preview"></ul>
+      <div id="drop-zone" role="region" aria-labelledby="upload-label">
+        <label for="avatar" class="drop-zone-content">
+          <div class="upload-icon" aria-hidden="true">
+            <img src="assets/images/icon-upload.svg">
+          </div>
+
+          <span class="drop-text">Drag and drop or click to upload</span>
+
+          <input type="file" id="avatar" multiple accept="image/*" class="visually-hidden">
+
+        </label>
+      </div>
+
+      <p class="info-text">
+        <img src="assets/images/icon-info.svg" role="presentation" />
+        Upload your photo (JPG or PNG, max size: 500KB).
+      </p>
+
+      <ul id="preview" aria-live="polite"></ul>
+
+      <!-- Buttons (hidden by default, only show up after image is uploaded) -->
+      <div class="hidden">
         <!-- Remove image -->
         <button id="remove-img-btn">Remove image</button>
         <!-- Change image -->
         <button id="change-img-btn">Change image</button>
-      </label>
+      </div>
     </div>
   </form>
-  <p>Upload your photo (JPG or PNG, max size: 500KB).</p>
 
   Full Name
 
