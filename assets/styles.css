@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+/* Variables */
+:root {
+    /* Colors */
+    --neutral-0: hsl(0, 0%, 100%);
+    --neutral-300: hsl(252, 6%, 83%);
+    --neutral-500: hsl(245, 15%, 58%);
+    --neutral-700: hsl(245, 19%, 35%);
+    --neutral-900: hsl(248, 70%, 10%);   
+    --orange-500: hsl(7, 88%, 67%);
+    --orange-700: hsl(7, 71%, 60%);
+    --gradient: linear-gradient(90deg, hsl(7, 86%, 67%) 0%, hsl(0, 0%, 100%) 100%);
+    
+    /* Typography */
+    --letter-spacing-1: -1;
+    --text-1: 800 60px/1.1 "Inconsolata", monospace;
+    --text-1-mobile: 800 30px/1.1 "Inconsolata", monospace;
+    --text-2: 700 40px/1.1 "Inconsolata", monospace;
+    --text-2-mobile: 700 24px/1.1 "Inconsolata", monospace;
+    --text-3: 700 30px/1.1 "Inconsolata", monospace;
+    --text-3-mobile: 700 22px/1.1 "Inconsolata", monospace;
+    
+    --letter-spacing-2: -0.5;
+    --text-4: 500 24px/1.2 "Inconsolata", monospace;
+    --text-4-mobile: 500 20px/1.2 "Inconsolata", monospace;
+    --text-5-medium: 500 20px/1.1 "Inconsolata", monospace;
+    
+    --letter-spacing-3: -0.3;
+    --text-5-extrabold: 800 20px/1.1 "Inconsolata", monospace;
+
+    --letter-spacing-4: 0;
+    --text-6: 500 18px/1.2 "Inconsolata", monospace;
+    --text-6-mobile: 500 14px/1.2 "Inconsolata", monospace;
+    
+    --letter-spacing-5: -0.2;
+    --text-7: 400 12px/1.2 "Inconsolata", monospace;
+    
+    /* Spacing */
+    --spacing-0: 0;
+    --spacing-025: 2px;
+    --spacing-050: 4px;
+    --spacing-075: 6px;
+    --spacing-100: 8px;
+    --spacing-150: 12px;
+    --spacing-200: 16px;
+    --spacing-250: 20px;
+    --spacing-300: 24px;
+    --spacing-400: 32px;
+    --spacing-500: 40px;
+    --spacing-600: 48px;
+    --spacing-800: 64px;
+    --spacing-1000: 80px;
+
+    /* Radius */
+    --radius-0: 0;
+    --radius-4: 4px;
+    --radius-6: 6px;
+    --radius-8: 8px;
+    --radius-10: 10px;
+    --radius-12: 12px;
+    --radius-16: 16px;
+    --radius-20: 20px;
+    --radius-24: 24px;
+    --radius-full: 999px;
+}
+
+.attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: var(--neutral-900);
+    }
