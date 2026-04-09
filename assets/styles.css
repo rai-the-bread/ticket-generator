@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-body {
+body, body * {
   background: var(--neutral-900);
   color: var(--neutral-0);
 }

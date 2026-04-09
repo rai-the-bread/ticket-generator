@@ -9,6 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="assets/styles.css">
   <title>Lunar Faire Tickets</title>
+  <script src="assets/script.js"></script>
 </head>
 
 <body>
@@ -52,18 +53,32 @@
         <button id="change-img-btn">Change image</button>
       </div>
     </div>
+    <!-- Full Name -->
+    <div>
+      <label for="full-name">
+        Full Name
+      </label>
+      <input type="text" name="full-name" id="full-name" required />
+    </div>
+    <!-- Email Address -->
+    <div>
+      <label for="email">
+        Email Address
+      </label>
+      <input type="text" name="email" id="email" placeholder="example@email.com" required />
+    </div>
+    <!-- GitHub -->
+    <div>
+      <label for="github">
+        GitHub Username
+      </label>
+      <input type="text" name="github" id="github" placeholder="@yourusername" required />
+    </div>
+    <!-- Submit -->
+    <div>
+      <input type="submit" value="Generate My Ticket" />
+    </div>
   </form>
-
-  Full Name
-
-  Email Address
-  example@email.com
-
-  GitHub Username
-  @yourusername
-
-  Generate My Ticket
-
   <!-- Form ends -->
 
   <!-- Generated tickets starts -->
