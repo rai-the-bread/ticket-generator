@@ -9,16 +9,15 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="assets/styles.css">
   <title>Lunar Faire Tickets</title>
-  <script src="assets/script.js"></script>
 </head>
 
 <body>
 
   <!-- Form starts -->
-  <form action="" method="post" class="form">
+  <form action="" method="post" class="form" id="ticket-form">
     <h1>Your Journey to Lunar Faire Starts Here!</h1>
 
-    <p>Secure your spot at the next year witchy night market!</p>
+    <p>Secure your spot at the next witchy night market!</p>
     <!-- Upload photo -->
     <div class="upload-container">
       <p id="upload-label">Upload Avatar</p>
@@ -31,7 +30,7 @@
 
           <span class="drop-text">Drag and drop or click to upload</span>
 
-          <input type="file" id="avatar" multiple accept="image/*" class="visually-hidden">
+          <input type="file" id="avatar" name="avatar" multiple accept="image/*" class="visually-hidden">
 
         </label>
       </div>
@@ -41,7 +40,7 @@
         Upload your photo (JPG or PNG, max size: 500KB).
       </p>
 
-      <ul id="preview" aria-live="polite"></ul>
+      <div id="preview" aria-live="polite"></div>
 
       <!-- Buttons (hidden by default, only show up after image is uploaded) -->
       <div class="hidden">
@@ -87,9 +86,9 @@
 
   <!-- Ticket -->
   <h2>Lunar Faire</h2>
-  <p>May 4, 2026 / NJ</p>
+  <p>May 21, 2026 / NJ</p>
 
-  <!-- User's info will go here -->
+  <!-- ***TODO: User's info will go here -->
   <!-- Avatar, name, username -->
 
   <!-- Generated tickets ends -->
@@ -98,6 +97,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
     Coded by <a href="#">Rai the Bread</a>.
   </footer>
+  <script src="assets/script.js"></script>
 </body>
 
 </html>

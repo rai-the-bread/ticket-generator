@@ -114,6 +114,13 @@ body, body * {
   cursor: pointer;
 }
 
+/* AVATAR PREVIEW */
+.avatar-preview {
+  border-radius: var(--spacing-150);
+  width: 60px;
+  height: 60px;
+}
+
 /* FOOTER */
 .attribution {
   font: var(--text-7);
