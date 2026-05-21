@@ -25,7 +25,17 @@
       <div id="drop-zone" class="flex flex-center" role="region" aria-labelledby="upload-label">
         <label for="avatar" class="drop-zone-content flex flex-col flex-center">
           <div class="upload-icon" aria-hidden="true">
-            <img src="assets/images/icon-upload.svg">
+            <img src="assets/images/icon-upload.svg" alt="upload icon" class="drop-zone-icon">
+            <div class="preview flex flex-col flex-center">
+              <div id="avatar-preview" aria-live="polite"></div>
+              <!-- Buttons (hidden by default, only show up after image is uploaded) -->
+              <div class="hidden preview-buttons">
+                <!-- Remove image -->
+                <button id="remove-img-btn">Remove image</button>
+                <!-- Change image -->
+                <button id="change-img-btn">Change image</button>
+              </div>
+            </div>
           </div>
 
           <span class="drop-text">Drag and drop or click to upload</span>
@@ -39,16 +49,6 @@
         <img src="assets/images/icon-info.svg" role="presentation" />
         Upload your photo (JPG or PNG, max size: 500KB).
       </p>
-
-      <div id="preview" aria-live="polite"></div>
-
-      <!-- Buttons (hidden by default, only show up after image is uploaded) -->
-      <div class="hidden">
-        <!-- Remove image -->
-        <button id="remove-img-btn">Remove image</button>
-        <!-- Change image -->
-        <button id="change-img-btn">Change image</button>
-      </div>
     </div>
     <!-- Full Name -->
     <div>
