@@ -25,7 +25,7 @@ This is a solution to the [Conference ticket generator challenge on Frontend Men
 
 Users should be able to:
 
-- Complete the form with their details
+- Complete the form with their details ✅
 - Receive form validation messages if:
   - Any field is missed
   - The email address is not formatted correctly
@@ -70,27 +70,12 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+5/21/26:
+This was my first time implementing drag and drop functionality. The MDN was such a helpful resource for this. I also used Copilot although in the end the MDN was most helpful.
 
-To see how you can add code snippets, see below:
+Today, I implemented the drag and drop, got the file out of the form submission and displayed it on the screen. 
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+Next, I am going to style that section before moving onto the next one. And ensure the form validation is implemented.
 
 ### Continued development
 
