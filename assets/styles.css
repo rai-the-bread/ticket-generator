@@ -75,6 +75,11 @@ body, body * {
     --radius-full: 999px;
 }
 
+h1 {
+  font: var(--text-2);
+  text-align: center;
+}
+
 /* UTILITY */
 .visually-hidden {
   position: absolute;
