@@ -31,10 +31,12 @@
                 <div id="avatar-preview" aria-live="polite"></div>
                 <!-- Buttons (hidden by default, only show up after image is uploaded) -->
                 <div class="hidden preview-buttons">
-                  <!-- Remove image -->
-                  <button id="remove-img-btn">Remove image</button>
-                  <!-- Change image -->
-                  <button id="change-img-btn">Change image</button>
+                  <div class="flex space-between gap-1">
+                    <!-- Remove image -->
+                    <button id="remove-img-btn">Remove image</button>
+                    <!-- Change image -->
+                    <button id="change-img-btn">Change image</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -74,21 +76,20 @@
       </div>
       <!-- Submit -->
       <div>
-        <input type="submit" value="Generate My Ticket" />
+        <input type="submit" class="button" value="Generate My Ticket" />
       </div>
     </form>
     <!-- Form ends -->
 
-    <!-- Generated tickets starts -->
-    <div>---DIVIDER--</div>
-    <h1>Congrats<span class="name"></span>! Your ticket is ready.</h1>
+    <!-- Generated ticket-->
+    <!-- <h1>Congrats<span class="name"></span>! Your ticket is ready.</h1> -->
 
-    <p>We've emailed your ticket to <span class="email">Email Address</span> and will send updates in the run up to the
-      event.</p>
+    <!-- <p>We've emailed your ticket to <span class="email">Email Address</span> and will send updates in the run up to the
+      event.</p> -->
 
     <!-- Ticket -->
-    <h2>Lunar Faire</h2>
-    <p>May 21, 2026 / NJ</p>
+    <!-- <h2>Lunar Faire</h2>
+    <p>May 21, 2026 / NJ</p> -->
 
     <!-- ***TODO: User's info will go here -->
     <!-- Avatar, name, username -->

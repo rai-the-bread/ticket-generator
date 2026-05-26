@@ -78,6 +78,11 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 5/26/26:
 - Working on styling
 
+Need to:
+- Make remove and change image buttons functional
+- Style inputs in error state
+- Style drop zone in all the states
+
 ### Continued development
 
 Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.

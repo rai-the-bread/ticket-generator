@@ -7,9 +7,18 @@
 }
 
 body, body * {
-  background: var(--neutral-900);
   color: var(--neutral-0);
   font: var(--text-5);
+}
+
+body {
+  /* background: var(--neutral-900) center / cover no-repeat url("images/background-mobile.png"); */
+  background-image: url("images/pattern-squiggly-line-bottom-mobile-tablet.svg"), url("images/background-mobile.png");
+  background-repeat: no-repeat;
+  background-position: bottom left, center;
+  background-size: 250px auto, cover;
+  /* margin:0; */
+  /* min-height: 100vh; */
 }
 
 /* Variables */
@@ -25,7 +34,8 @@ body, body * {
     --orange-500: hsl(7, 88%, 67%);
     --orange-700: hsl(7, 71%, 60%);
     --gradient: linear-gradient(90deg, hsl(7, 86%, 67%) 0%, hsl(0, 0%, 100%) 100%);
-    --transparent: hsla(0, 0%, 100%, 0.08);
+    --transparent-8: rgba(255, 255, 255, 0.08);
+    --transparent-20: rgba(255, 255, 255, 0.2);
     
     /* Typography */
     --letter-spacing-1: -1;
@@ -116,6 +126,14 @@ body, body * {
       justify-content: center;
     }
 
+      .space-between {
+        justify-content: space-between;
+      }
+
+        .gap-1 {
+          gap: 0.5rem;
+        }
+
 /* SECTIONS */
 main {
   margin: 0.5rem 1rem;
@@ -176,6 +194,30 @@ main {
           font: var(--text-6-mobile);
         }
 
+/* BUTTONS */
+.button {
+  margin: 2rem 0 5rem 0;
+  background: var(--orange-500);
+  border: 1px solid var(--orange-500);
+  color: var(--neutral-900);
+}
+
+  .button:hover {
+    background: var(--orange-700);
+    border: 1px solid var(--orange-700);
+    cursor: pointer;
+  }
+
+          #change-img-btn, #remove-img-btn {
+            border: none;
+            background-color: #373351;
+            color: var(--neutral-300);
+            padding: 0.5rem;
+            border-radius: var(--radius-4);
+            font: var(--text-7);
+            margin-top: 1rem;
+          }
+
   /* AVATAR PREVIEW */
   .avatar-preview {
     border-radius: var(--spacing-150);
@@ -193,13 +235,29 @@ main {
       border-radius: var(--radius-12);
       width: 100%;
       border: 1px solid var(--neutral-500);
+      background-color: var(--transparent-8);
       height: 54px;
       padding: 1rem;
     }
 
-      input:placeholder-shown {
+      input::placeholder {
         color: var(--neutral-300);
       }
+
+        input:not(.button):hover {
+          background-color: var(--transparent-20);
+          cursor: pointer;
+        }
+
+          input:focus {
+            box-shadow: 0 0 5px var(--neutral-900);
+            border: inset 1px var(--neutral-500);
+          }
+
+            input::user-invalid {
+              border: 1px solid var(--orange-500);
+              color: orange;
+            }
 
 /* FOOTER */
 .attribution, .attribution a {
