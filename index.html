@@ -12,16 +12,16 @@
 </head>
 
 <body>
-  <div class="flex flex-col flex-center">
+  <main class="flex flex-col flex-center">
     <img src="assets/images/lunar-faire-logo.png" alt="Lunar Faire Logo" id="logo">
     <!-- Form starts -->
     <form action="" method="post" class="form" id="ticket-form">
-      <h1>Your Journey to Lunar Faire Starts Here!</h1>
+      <h1 class="title">Your Journey to <span class="fancy">Lunar Faire</span> Starts Here!</h1>
 
-      <p>Secure your spot at the next witchy night market!</p>
+      <p class="text-center neutral-300">Secure your spot at the next witchy & weird night market!</p>
       <!-- Upload photo -->
       <div class="upload-container">
-        <p id="upload-label">Upload Avatar</p>
+        <p id="upload-label" class="form-label">Upload Avatar</p>
         <!-- DRAG AND DROP ZONE -->
         <div id="drop-zone" class="flex flex-center" role="region" aria-labelledby="upload-label">
           <label for="avatar" class="drop-zone-content flex flex-col flex-center">
@@ -39,35 +39,35 @@
               </div>
             </div>
 
-            <span class="drop-text">Drag and drop or click to upload</span>
+            <span class="drop-text neutral-300">Drag and drop or click to upload</span>
 
             <input type="file" id="avatar" name="avatar" multiple accept="image/*" class="visually-hidden">
 
           </label>
         </div>
 
-        <p class="info-text">
+        <p class="info-text neutral-300">
           <img src="assets/images/icon-info.svg" role="presentation" />
           Upload your photo (JPG or PNG, max size: 500KB).
         </p>
       </div>
       <!-- Full Name -->
       <div>
-        <label for="full-name">
+        <label for="full-name" class="form-label">
           Full Name
         </label>
         <input type="text" name="full-name" id="full-name" required />
       </div>
       <!-- Email Address -->
       <div>
-        <label for="email">
+        <label for="email" class="form-label">
           Email Address
         </label>
         <input type="email" name="email" id="email" placeholder="example@email.com" required />
       </div>
       <!-- GitHub -->
       <div>
-        <label for="github">
+        <label for="github" class="form-label">
           GitHub Username
         </label>
         <input type="text" name="github" id="github" placeholder="@yourusername" required />
@@ -93,11 +93,11 @@
     <!-- Avatar, name, username -->
 
     <!-- Generated tickets ends -->
-  </div>
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-    Coded by <a href="#">Rai the Bread</a>.
-  </footer>
+    <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Rai the Bread</a>.
+    </footer>
+  </main>
   <script src="assets/script.js"></script>
 </body>
 

@@ -71,11 +71,12 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ### What I learned
 
 5/21/26:
-This was my first time implementing drag and drop functionality. The MDN was such a helpful resource for this. I also used Copilot although in the end the MDN was most helpful.
+- This was my first time implementing drag and drop functionality. The MDN was such a helpful resource for this. I also used Copilot although in the end the MDN was most helpful.
+- Today, I implemented the drag and drop, got the file out of the form submission and displayed it on the screen. 
+- Next, I am going to style that section before moving onto the next one. And ensure the form validation is implemented.
 
-Today, I implemented the drag and drop, got the file out of the form submission and displayed it on the screen. 
-
-Next, I am going to style that section before moving onto the next one. And ensure the form validation is implemented.
+5/26/26:
+- Working on styling
 
 ### Continued development
 

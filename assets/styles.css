@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Updock&display=swap');
 
 /* GLOBAL */
 * {
@@ -8,6 +9,7 @@
 body, body * {
   background: var(--neutral-900);
   color: var(--neutral-0);
+  font: var(--text-5);
 }
 
 /* Variables */
@@ -18,9 +20,12 @@ body, body * {
     --neutral-500: hsl(245, 15%, 58%);
     --neutral-700: hsl(245, 19%, 35%);
     --neutral-900: hsl(248, 70%, 10%);   
+    --purple: #814793;
+    --light-purple: #bc67d6;
     --orange-500: hsl(7, 88%, 67%);
     --orange-700: hsl(7, 71%, 60%);
     --gradient: linear-gradient(90deg, hsl(7, 86%, 67%) 0%, hsl(0, 0%, 100%) 100%);
+    --transparent: hsla(0, 0%, 100%, 0.08);
     
     /* Typography */
     --letter-spacing-1: -1;
@@ -34,6 +39,7 @@ body, body * {
     --letter-spacing-2: -0.5;
     --text-4: 500 24px/1.2 "Inconsolata", monospace;
     --text-4-mobile: 500 20px/1.2 "Inconsolata", monospace;
+    --text-5: 400 20px/1.1 "Inconsolata", monospace;
     --text-5-medium: 500 20px/1.1 "Inconsolata", monospace;
     
     --letter-spacing-3: -0.3;
@@ -75,11 +81,6 @@ body, body * {
     --radius-full: 999px;
 }
 
-h1 {
-  font: var(--text-2);
-  text-align: center;
-}
-
 /* UTILITY */
 .visually-hidden {
   position: absolute;
@@ -97,6 +98,10 @@ h1 {
   display: none;
 }
 
+.neutral-300 {
+  color: var(--neutral-300);
+}
+
 /* FLEXBOX */
 .flex {
   display: flex;
@@ -111,33 +116,85 @@ h1 {
       justify-content: center;
     }
 
+/* SECTIONS */
+main {
+  margin: 0.5rem 1rem;
+}
+
+/* TEXT */
+.title {
+  font: var(--text-1-mobile);
+  text-align: center;
+  font-size: 2.6rem;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+}
+
+.fancy {
+  font-family: "Updock", cursive;
+  text-shadow: 5px 5px 5px var(--light-purple);
+  font-size: 3rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.info-text {
+  font: var(--text-7);
+}
+
 /* LOGO */
 #logo {
   height: 80px;
   width: auto;
 }
 
-/* DROP ZONE */
-#drop-zone {
-  padding: 1em;
-  border: 1px dashed var(--neutral-500);
-  border-radius: var(--radius-12);
-  cursor: pointer;
-}
+/* FORM */
 
-/* AVATAR PREVIEW */
-.avatar-preview {
-  border-radius: var(--spacing-150);
-  width: 60px;
-  height: 60px;
-}
+  /* DROP ZONE */
+  #drop-zone {
+    padding: 1em;
+    border: 1px dashed var(--neutral-500);
+    border-radius: var(--radius-12);
+    cursor: pointer;
+  }
+
+    #drop-zone, #drop-zone * {
+      background-color: #19173f;
+    }
+
+      .drop-zone-icon {
+          background-color: #312f53 !important;
+          padding: 0.5rem;
+          border-radius: var(--radius-6);
+          width: 50px;
+          height: 50px;
+        }
+
+  .drop-text {
+    font: var(--text-6-mobile);
+  }
+
+  /* AVATAR PREVIEW */
+  .avatar-preview {
+    border-radius: var(--spacing-150);
+    width: 60px;
+    height: 60px;
+  }
+
+  /* LABELS */
+  .form-label {
+    margin: 1rem 0;
+    display: block;
+  }
 
 /* FOOTER */
-.attribution {
+.attribution, .attribution a {
   font: var(--text-7);
   text-align: center;
 }
 
   .attribution a {
-    color: var(--neutral-0);
+    color: var(--light-purple);
   }
