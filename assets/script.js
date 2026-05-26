@@ -34,7 +34,8 @@ function showPreview(event) {
     dropZoneText.classList.add("hidden");
 
     // show remove image button
-    previewButtons.classList.remove("hidden");
+  previewButtons.classList.remove("hidden");
+  dropZone.classList.add("orange-border");
     // show change image button
 }
 
