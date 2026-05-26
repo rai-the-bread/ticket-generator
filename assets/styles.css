@@ -160,7 +160,7 @@ main {
     cursor: pointer;
   }
 
-    #drop-zone, #drop-zone * {
+    #drop-zone, #drop-zone *, input {
       background-color: #19173f;
     }
 
@@ -172,9 +172,9 @@ main {
           height: 50px;
         }
 
-  .drop-text {
-    font: var(--text-6-mobile);
-  }
+        .drop-text {
+          font: var(--text-6-mobile);
+        }
 
   /* AVATAR PREVIEW */
   .avatar-preview {
@@ -183,11 +183,23 @@ main {
     height: 60px;
   }
 
-  /* LABELS */
+  /* LABELS + INPUTS */
   .form-label {
-    margin: 1rem 0;
+    margin: 2rem 0 1rem 0;
     display: block;
   }
+
+    input {
+      border-radius: var(--radius-12);
+      width: 100%;
+      border: 1px solid var(--neutral-500);
+      height: 54px;
+      padding: 1rem;
+    }
+
+      input:placeholder-shown {
+        color: var(--neutral-300);
+      }
 
 /* FOOTER */
 .attribution, .attribution a {
