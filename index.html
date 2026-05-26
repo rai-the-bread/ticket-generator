@@ -12,87 +12,88 @@
 </head>
 
 <body>
+  <div class="flex flex-col flex-center">
+    <img src="assets/images/lunar-faire-logo.png" alt="Lunar Faire Logo" id="logo">
+    <!-- Form starts -->
+    <form action="" method="post" class="form" id="ticket-form">
+      <h1>Your Journey to Lunar Faire Starts Here!</h1>
 
-  <!-- Form starts -->
-  <form action="" method="post" class="form" id="ticket-form">
-    <h1>Your Journey to Lunar Faire Starts Here!</h1>
-
-    <p>Secure your spot at the next witchy night market!</p>
-    <!-- Upload photo -->
-    <div class="upload-container">
-      <p id="upload-label">Upload Avatar</p>
-      <!-- DRAG AND DROP ZONE -->
-      <div id="drop-zone" class="flex flex-center" role="region" aria-labelledby="upload-label">
-        <label for="avatar" class="drop-zone-content flex flex-col flex-center">
-          <div class="upload-icon" aria-hidden="true">
-            <img src="assets/images/icon-upload.svg" alt="upload icon" class="drop-zone-icon">
-            <div class="preview flex flex-col flex-center">
-              <div id="avatar-preview" aria-live="polite"></div>
-              <!-- Buttons (hidden by default, only show up after image is uploaded) -->
-              <div class="hidden preview-buttons">
-                <!-- Remove image -->
-                <button id="remove-img-btn">Remove image</button>
-                <!-- Change image -->
-                <button id="change-img-btn">Change image</button>
+      <p>Secure your spot at the next witchy night market!</p>
+      <!-- Upload photo -->
+      <div class="upload-container">
+        <p id="upload-label">Upload Avatar</p>
+        <!-- DRAG AND DROP ZONE -->
+        <div id="drop-zone" class="flex flex-center" role="region" aria-labelledby="upload-label">
+          <label for="avatar" class="drop-zone-content flex flex-col flex-center">
+            <div class="upload-icon" aria-hidden="true">
+              <img src="assets/images/icon-upload.svg" alt="upload icon" class="drop-zone-icon">
+              <div class="preview flex flex-col flex-center">
+                <div id="avatar-preview" aria-live="polite"></div>
+                <!-- Buttons (hidden by default, only show up after image is uploaded) -->
+                <div class="hidden preview-buttons">
+                  <!-- Remove image -->
+                  <button id="remove-img-btn">Remove image</button>
+                  <!-- Change image -->
+                  <button id="change-img-btn">Change image</button>
+                </div>
               </div>
             </div>
-          </div>
 
-          <span class="drop-text">Drag and drop or click to upload</span>
+            <span class="drop-text">Drag and drop or click to upload</span>
 
-          <input type="file" id="avatar" name="avatar" multiple accept="image/*" class="visually-hidden">
+            <input type="file" id="avatar" name="avatar" multiple accept="image/*" class="visually-hidden">
 
-        </label>
+          </label>
+        </div>
+
+        <p class="info-text">
+          <img src="assets/images/icon-info.svg" role="presentation" />
+          Upload your photo (JPG or PNG, max size: 500KB).
+        </p>
       </div>
+      <!-- Full Name -->
+      <div>
+        <label for="full-name">
+          Full Name
+        </label>
+        <input type="text" name="full-name" id="full-name" required />
+      </div>
+      <!-- Email Address -->
+      <div>
+        <label for="email">
+          Email Address
+        </label>
+        <input type="email" name="email" id="email" placeholder="example@email.com" required />
+      </div>
+      <!-- GitHub -->
+      <div>
+        <label for="github">
+          GitHub Username
+        </label>
+        <input type="text" name="github" id="github" placeholder="@yourusername" required />
+      </div>
+      <!-- Submit -->
+      <div>
+        <input type="submit" value="Generate My Ticket" />
+      </div>
+    </form>
+    <!-- Form ends -->
 
-      <p class="info-text">
-        <img src="assets/images/icon-info.svg" role="presentation" />
-        Upload your photo (JPG or PNG, max size: 500KB).
-      </p>
-    </div>
-    <!-- Full Name -->
-    <div>
-      <label for="full-name">
-        Full Name
-      </label>
-      <input type="text" name="full-name" id="full-name" required />
-    </div>
-    <!-- Email Address -->
-    <div>
-      <label for="email">
-        Email Address
-      </label>
-      <input type="email" name="email" id="email" placeholder="example@email.com" required />
-    </div>
-    <!-- GitHub -->
-    <div>
-      <label for="github">
-        GitHub Username
-      </label>
-      <input type="text" name="github" id="github" placeholder="@yourusername" required />
-    </div>
-    <!-- Submit -->
-    <div>
-      <input type="submit" value="Generate My Ticket" />
-    </div>
-  </form>
-  <!-- Form ends -->
+    <!-- Generated tickets starts -->
+    <h1>Congrats<span class="name"></span>! Your ticket is ready.</h1>
 
-  <!-- Generated tickets starts -->
-  <h1>Congrats<span class="name"></span>! Your ticket is ready.</h1>
+    <p>We've emailed your ticket to <span class="email">Email Address</span> and will send updates in the run up to the
+      event.</p>
 
-  <p>We've emailed your ticket to <span class="email">Email Address</span> and will send updates in the run up to the
-    event.</p>
+    <!-- Ticket -->
+    <h2>Lunar Faire</h2>
+    <p>May 21, 2026 / NJ</p>
 
-  <!-- Ticket -->
-  <h2>Lunar Faire</h2>
-  <p>May 21, 2026 / NJ</p>
+    <!-- ***TODO: User's info will go here -->
+    <!-- Avatar, name, username -->
 
-  <!-- ***TODO: User's info will go here -->
-  <!-- Avatar, name, username -->
-
-  <!-- Generated tickets ends -->
-
+    <!-- Generated tickets ends -->
+  </div>
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
     Coded by <a href="#">Rai the Bread</a>.

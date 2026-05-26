@@ -111,6 +111,12 @@ h1 {
       justify-content: center;
     }
 
+/* LOGO */
+#logo {
+  height: 80px;
+  width: auto;
+}
+
 /* DROP ZONE */
 #drop-zone {
   padding: 1em;
