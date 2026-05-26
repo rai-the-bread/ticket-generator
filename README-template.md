@@ -79,9 +79,11 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Working on styling
 
 Need to:
+- Make ticket generate
 - Make remove and change image buttons functional
 - Style inputs in error state
 - Style drop zone in all the states
+- Tablet + desktop designs
 
 ### Continued development
 
